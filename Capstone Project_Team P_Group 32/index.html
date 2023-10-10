@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Care</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https:kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2-removebg-preview.png">
+            </a>
+        </div>
+    
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+        
+    <section class="header-home">
+        <div class="text-box-home">
+            <h1> Welcome to Dental Care</h1>
+            <p> Here, we provide excellent yet affordable dental health services with great support for flexible and easy appointment booking.</p>
+            <a href="#doclist" class="hero-btn-about">
+                Check Out Our Professional Dentists</a>
+        </div>
+    </section>
+
+    <section class="doctor-list" id="doclist">
+        <h1>Our Professional Dentists</h1>
+        <p>Skilled Dentists. Exceptional Care. Your Health, Our Priority.</p>
+  
+        <div class="row">
+          <div class="profile-col">
+            <img src="images/drstrange.jpeg" alt="Doctor 1" />
+            <h3>drg. Strange</h3>
+            <p>Specialty: General Dentistry</p>
+            <p>Education: Doctor of Dental Surgery (DDS)</p>
+            <p>Experience: 15+ years</p>
+            <a href="index.html#book" class="btn-appointment">Book Appointment</a>
+          </div>
+  
+          <div class="profile-col">
+            <img src="images/drtirta.jpeg" alt="Doctor 2" />
+            <h3>drg. Tirta</h3>
+            <p>Specialty: Orthodontics</p>
+            <p>Education: Doctor of Dental Medicine (DDM)</p>
+            <p>Experience: 10+ years</p>
+            <a href="index.html#book" class="btn-appointment">Book Appointment</a>
+          </div>
+  
+          <div class="profile-col">
+            <img src="images/drboyke.webp" alt="Doctor 3" />
+            <h3>drg. Boyke</h3>
+            <p>Specialty: General Dentistry</p>
+            <p>Education: Doctor of Clinical Dentistry (DClinDent)</p>
+            <p>Experience: 10+ years</p>
+            <a href="index.html#book" class="btn-appointment">Book Appointment</a>
+          </div>
+  
+          <div class="profile-col">
+            <img src="images/tompi.jpeg" alt="Doctor 4" />
+            <h3>drg. Tompi</h3>
+            <p>Specialty: General Dentistry</p>
+            <p>Education: Doctor of Dentistry (DDent)</p>
+            <p>Experience: 20+ years</p>
+            <a href="index.html#book" class="btn-appointment">Book Appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="book" id="book">
+        <div class="container">
+            <div class="text">
+                <h1>Book Your Doctor</h1>
+            </div>
+            <div class="form" id="forms">
+                <form id="booking-form">
+                    <div class="input-grup">
+                        <i data-feather="user"></i>
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="input-grup">
+                        <i data-feather="mail"></i>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                    
+                    
+                    <div class="input-grup">
+                        <div class="date">
+                            <i data-feather="calendar"></i>
+                            <div class="picker-container">
+                                <label for="date"></label>
+                                <input type="date" id="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-grup">
+                        <div class="select">
+                            <i data-feather="search"></i>
+                            <select id="doctor">
+                                <option value="doctor_strange">drg. Strange</option>
+                                <option value="doctor_tirta">drg. Tirta</option>
+                                <option value="doctor_boyke">drg. Boyke</option>
+                                <option value="doctor_tompi">drg. Tompi</option>
+                            </select>
+                        
+                            <div id="time-slots">
+                                <i data-feather="clock"></i>
+                                <label for="time"></label>
+                                <select id="time-slot-select">
+                                    <optgroup label="drg. Strange">
+                                        <option value="7-8">7:00 AM - 8:00 AM</option>
+                                        <option value="8-9">8:00 AM - 9:00 AM</option>
+                                        <option value="9-10">9:00 AM - 10:00 AM</option>                                      
+                                    </optgroup>
+                                    <optgroup label="drg. Tirta">
+                                        <option value="10-11">10:00 AM - 11:00 AM</option>
+                                        <option value="12-1">12:00 PM - 1:00 PM</option>
+                                        <option value="1-2">1:00 PM - 2:00 PM</option>
+                                    </optgroup>
+                                    <optgroup label="drg. Boyke">
+                                        <option value="3-4">3:00 PM - 4:00 PM</option>
+                                        <option value="5-6">5:00 PM - 6:00 PM</option>
+                                        <option value="6-7">6:00 PM - 7:00 PM</option>
+                                    </optgroup>
+                                    <optgroup label="drg. Tompi">
+                                        <option value="10-11">10:00 AM - 11:00 AM</option>
+                                        <option value="12-1">12:00 PM - 1:00 PM</option>
+                                        <option value="3-4">8:00 PM - 9:00 PM</option>
+                                    </optgroup>
+                                </select>
+                            </div>    
+                    <button type="submit" class="btnsubmit">BOOK NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="table" id="table">
+        <div class="patientQueue">
+            <h1>Patient Data</h1>
+            <table class="patient-table" id="patient-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Appointment Time</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-data">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="footer">   
+        <div class="waves"></div>
+        <p>Copyright @TeamP32 | All Right Reserved</p>
+    </section>
+    <script>feather.replace();</script>
+    <script src="js/script.js"></script>
+        
+</body>
+</html>
