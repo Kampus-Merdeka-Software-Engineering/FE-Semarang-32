@@ -9,7 +9,7 @@ msg.addEventListener("submit", (event) => {
 
 
 
-  fetch("http://localhost:3000/feedback", {
+  fetch("http://localhost:https://be-semarang-32-production.up.railway.app/feedback/feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

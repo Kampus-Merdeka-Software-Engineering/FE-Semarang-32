@@ -75,7 +75,7 @@ book.addEventListener("submit", (event) => {
   console.log (typeof time)
 
 
-  fetch("http://localhost:3000/patients", {
+  fetch("https://be-semarang-32-production.up.railway.app/patients", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.getElementById("patient-data");
 
   // Fetch data from the backend
-  fetch("http://localhost:3000/patients")
+  fetch("https://be-semarang-32-production.up.railway.app/patients")
       .then(response => response.json())
       .then(data => {
           // Iterate through the data and create table rows
